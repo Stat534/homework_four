@@ -1,0 +1,33 @@
+HW4
+================
+
+## Spatial Regression
+
+Recall the Washington, DC dataset from HW 2. Consider a subset that
+contains only houses in `Good` condition, with one bathroom, and two
+bedrooms. Note that `LANDAREA` corresponds to the size of the lot, not
+the square footage of the apartment.
+
+``` r
+DC <- read_csv('https://raw.githubusercontent.com/Stat534/homework_four/main/DC_wcoords.CSV')
+```
+
+#### 1\. Spatial EDA (10 points)
+
+Work through a descriptive and annotated Spatial Exploratory Data
+Analysis. This should parallel the class notes, but I expected a
+paragraph description, at a minimum, of the takeaway points for each
+part of the Spatial EDA.
+
+#### 2\. Spatial Data Analysis (10 points)
+
+Similar to the spatial data analysis we completed as a demo, analyze the
+housing data. Use at least covariate in the mean structure. Then compare
+your spatial model to one without any spatial structure (this could be a
+mean-only model or something from lm). **Note: this comparison will
+require defining a metric**
+
+#### 3\. Exploring alternative spatial structure (5 points)
+
+Now compare the spatial model from part 2 (presumably using exponential
+covariance structure), with a different spatial structure.
